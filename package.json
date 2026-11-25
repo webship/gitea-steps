@@ -1,0 +1,67 @@
+{
+  "name": "@webship-js/gitea-steps",
+  "version": "2.0.0",
+  "description": "Cucumber step definitions for Gitea and Forgejo, the open-source self-hosted Git forges (one pack for both: Forgejo is a fork of Gitea), a pack for webship-js (Playwright and Cucumber): logging in and out and its refusal, a repository and who may see it, the issue list, one issue (its comments, closing and reopening it, the time spent on it, its assignee and milestone), a new issue, and the milestones with their issues. Test content is made and removed through the forge's own REST API, so a run leaves the site as it found it.",
+  "main": "tests/step-definitions/gitea-helpers.js",
+  "files": [
+    "tests/step-definitions/",
+    "tests/features/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:dry": "cucumber-js --config cucumber.js --dry-run",
+    "test:examples": "node tests/check-examples.js",
+    "test:paths": "node tests/check-paths.js",
+    "test:must-fail": "node tests/check-must-fail.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "generate-reports": "generate-reports",
+    "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js"
+  },
+  "keywords": [
+    "webship-js",
+    "gitea",
+    "forgejo",
+    "git-forge",
+    "issues",
+    "milestones",
+    "time-tracking",
+    "cucumber",
+    "cucumber-js",
+    "playwright",
+    "bdd",
+    "gherkin",
+    "step-definitions",
+    "e2e-testing"
+  ],
+  "author": "Webship.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webship/gitea-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webship/gitea-steps/issues"
+  },
+  "homepage": "https://github.com/webship/gitea-steps#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 24.0"
+  },
+  "peerDependencies": {
+    "webship-js": "^2.0.16"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "webship-js": "^2.0.17"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^12"
+  }
+}
