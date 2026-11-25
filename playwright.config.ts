@@ -30,7 +30,7 @@ const config: PlaywrightConfig = {
     args: browser === 'chromium' ? chromiumArgs : [],
   },
   contextOptions: {
-    // Wide enough for the work package list to show its columns and a work package its activity beside its fields.
+    // Wide enough for an issue to show its timeline and its sidebar side by side.
     viewport: { width: 1600, height: 1200 },
     ignoreHTTPSErrors: true,
   },
