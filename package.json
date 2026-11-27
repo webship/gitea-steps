@@ -1,6 +1,6 @@
 {
   "name": "@webship-js/gitea-steps",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Cucumber step definitions for Gitea and Forgejo, the open-source self-hosted Git forges (one pack for both: Forgejo is a fork of Gitea), a pack for webship-js (Playwright and Cucumber): logging in and out and its refusal, a repository and who may see it, the issue list, one issue (its comments, closing and reopening it, the time spent on it, its assignee and milestone), a new issue, and the milestones with their issues. Test content is made and removed through the forge's own REST API, so a run leaves the site as it found it.",
   "main": "tests/step-definitions/gitea-helpers.js",
   "files": [
